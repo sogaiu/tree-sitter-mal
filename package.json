@@ -1,0 +1,27 @@
+{
+  "name": "tree-sitter-mal",
+  "version": "0.0.1",
+  "description": "Mal grammar for tree-sitter",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tree-sitter generate && npx node-gyp build",
+    "test": "npx tree-sitter test"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "nan": "2.14.0",
+    "web-tree-sitter": "0.16.4"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "0.16.9"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.mal",
+      "file-types": [
+        "mal"
+      ]
+    }
+  ]
+}
