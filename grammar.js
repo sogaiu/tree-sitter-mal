@@ -168,8 +168,6 @@ module.exports = grammar({
           field('value', $._form)),
 
     unquote_splicing_lit: $ =>
-      // XXX: metadata here doesn't seem to make sense, but the repl
-      //      will accept: `(^:x ~@[:a :b :c])
       seq(repeat($._metadata_lit),
           field('marker', "~@"),
           field('value', $._form)),
